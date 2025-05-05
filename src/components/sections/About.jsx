@@ -11,13 +11,13 @@ const About = () => {
     <motion.div 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 ,transition: { delay: 0.2, duration: 0.5 }}}
-      viewport={{ once: false, amount: 0.5 }}
-      id='about'
+      viewport={{ once: false, amount: 0.1 }}
+      
       className='about min-h-screen flex items-center justify-center py-20'>
 
       <div className='max-w-3xl mx-auto px-4'>
         <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>About Me</h2>
-        <div className='rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all glass'>
+        <div className='rounded-xl p-4 md:p-8 border-white/10 border hover:translate-y-1 transition-all glass'>
           <p className='text-gray-300 mb-6'>
             Hello! I'm James Ouma, a passionate software developer with a strong interest in creating innovative solutions. I have experience in various programming languages and frameworks, and I'm always eager to learn new technologies. My goal is to build applications that not only perform exceptionally well but also provide a delightful user experience.
           </p>
@@ -54,7 +54,7 @@ const About = () => {
 
           <div className='grid gird-cols-1 md:grid-cols-2 gap-6 mt-8'>
 
-            <div className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30'>
+            <div className='p-2 md:p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30'>
             <h3 className='text-xl font-bold mb-4 inline-flex items-center gap-2'><img width="48" height="48" src="https://img.icons8.com/emoji/48/school-emoji.png" alt="school-emoji"/> Education</h3>
             <ul className='list-disc list-inside text-gray-300 space-y-2'>
               <li>
@@ -66,7 +66,7 @@ const About = () => {
             </ul>
             </div>
 
-            <div className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-a;ll hover:border-blue-500/30'>
+            <div className='p-2 md:p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-a;ll hover:border-blue-500/30'>
             <h3 className='text-xl font-bold mb-4 inline-flex items-center gap-2'><img width="40" height="40" src="https://img.icons8.com/office/40/office.png" alt="office"/> Work Experience</h3>
             <div className='space-y-4 text-gray-300'>
 

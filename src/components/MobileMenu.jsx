@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { FaBars } from "react-icons/fa";
+import { Link } from 'react-scroll';
 import { FaXmark } from "react-icons/fa6";
 
 const MobileMenu = ({ menuOpen, setmenuOpen }) => {
@@ -22,28 +23,18 @@ const MobileMenu = ({ menuOpen, setmenuOpen }) => {
             aria-label='Close menu'
     />
 
-                    <a href="#home" 
-                    onClick={() => setmenuOpen(false)}
-                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>
-                        Home
-                    </a>
-                    <a href="#about" 
-                    onClick={() => setmenuOpen(false)}
-                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>
-
-                        About
-                    </a>
-                    <a href="#project"
-                    onClick={() => setmenuOpen(false)}
-                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>
-
-                        Projects
-                    </a>
-                    <a href="#contact"
-                    onClick={() => setmenuOpen(false)}
-                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>
-                        Contact
-                    </a>
+                    <Link to='home' smooth={true} duration={500} onClick={() => setmenuOpen(false)}
+                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>Home</Link>
+                    <Link to='about' smooth={true} duration={500} onClick={() => setmenuOpen(false)}
+                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>About</Link>
+                    <Link to='project' smooth={true} duration={500} onClick={() => setmenuOpen(false)}
+                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>Projects</Link>
+                    <Link to='contact' smooth={true} duration={500} onClick={() => setmenuOpen(false)}
+                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${menuOpen ? 'opacity-100 translate-y-0': "translate-y-5"}`}>Contact</Link>
+                    
+                    
+                    
+                    
 
 
     </div>
